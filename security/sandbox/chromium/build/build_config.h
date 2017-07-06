@@ -132,6 +132,9 @@
 #define ARCH_CPU_MIPSEL 1
 #define ARCH_CPU_32_BITS 1
 #define ARCH_CPU_LITTLE_ENDIAN 1
+#elif defined(__sh__)
+#define ARCH_CPU_SH 1
+#define ARCH_CPU_32_BITS 1
 #endif
 #else
 #error Please add support for your architecture in build/build_config.h
