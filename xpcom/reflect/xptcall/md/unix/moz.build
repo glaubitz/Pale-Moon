@@ -171,6 +171,11 @@ if CONFIG['OS_ARCH'] == 'Linux':
                 'xptcstubs_asm_mips.S',
                 'xptcstubs_mips.cpp',
             ]
+    if CONFIG['OS_TEST'] in ('sh4', 'sh4a'):
+        SOURCES += [
+            'xptcinvoke_linux_sh.cpp',
+            'xptcstubs_linux_sh.cpp',
+        ]
 
 if CONFIG['OS_ARCH'] == 'AIX':
     if CONFIG['HAVE_64BIT_BUILD']:
